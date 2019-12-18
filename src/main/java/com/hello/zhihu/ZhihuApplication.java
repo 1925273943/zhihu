@@ -8,7 +8,7 @@ public class ZhihuApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ZhihuApplication.class, args);
-        System.out.println(1234567890);
+        System.out.println(23);
     }
 
 }
