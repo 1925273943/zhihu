@@ -1,6 +1,5 @@
 package com.hello.zhihu;
 
-import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
