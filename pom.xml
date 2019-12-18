@@ -63,6 +63,38 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+        <!-- log4j 和下面的缺一不可-->
+        <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+
+        <!-- 记录日志，通常和  log4j.jar共同使用  -->
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging-api</artifactId>
+            <version>1.1</version>
+        </dependency>
+
+        <!-- 各种集合类和集合工具类的封装 -->
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+        <!-- 基础工具包，封装一些常用的基础操作，例如StringUtils类 -->
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -119,15 +151,7 @@
                 <directory>src/main/java</directory>
                 <!--<includes>**/*.xml</includes>-->
             </resource>
-            <resource>
-                <directory>src/main/webapp/jsp</directory>
-                <includes>
-                    <!--inclide是包含那个东西-->
-                    <include>**/*.jsp</include>
-                </includes>
-                <!--指定到编译后的那个目录下-->
-                <targetPath>/templates/jsp</targetPath>
-            </resource>
+            <!--s-->
             <resource>
                 <directory>src/main/resources/templates/back</directory>
                 <includes>
